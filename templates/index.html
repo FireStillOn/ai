@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>AI Shorts Generator</title></head>
+<body style="font-family:sans-serif;text-align:center;padding:2rem;">
+  <h1>📽️ AI Shorts Generator</h1>
+  <form method="POST">
+    <textarea name="prompt" rows="4" cols="50" placeholder="Enter your video idea..."></textarea><br><br>
+    <button type="submit">Generate</button>
+  </form>
+  {% if video_path %}
+    <h2>Your Video:</h2>
+    <video src="{{ video_path }}" controls width="300"></video>
+  {% endif %}
+</body>
+</html>
